@@ -7,6 +7,7 @@ import { Link } from "wouter";
 export default function HeroSection() {
   const [isFormOpen, setIsFormOpen] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [loadedImages, setLoadedImages] = useState(new Set());
   
   const slides = [
     {
@@ -57,6 +58,17 @@ export default function HeroSection() {
   ];
 
   useEffect(() => {
+    // Preload all images
+    slides.forEach((slide) => {
+      const img = new Image();
+      img.onload = () => {
+        setLoadedImages(prev => new Set([...prev, slide.background]));
+      };
+      img.src = slide.background;
+    });
+  }, []);
+
+  useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 5000);
@@ -94,13 +106,17 @@ export default function HeroSection() {
         // Single background image
         <>
           <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-300"
             style={{
               backgroundImage: `url('${currentSlideData.background}')`,
               imageRendering: 'crisp-edges',
-              filter: 'contrast(1.1) saturate(1.1)'
+              filter: 'contrast(1.1) saturate(1.1)',
+              opacity: loadedImages.has(currentSlideData.background) ? 1 : 0
             }}
           ></div>
+          {!loadedImages.has(currentSlideData.background) && (
+            <div className="absolute inset-0 bg-gray-800 animate-pulse"></div>
+          )}
           <div className="absolute inset-0 bg-black/40"></div>
         </>
       )}
