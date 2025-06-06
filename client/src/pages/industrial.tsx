@@ -48,7 +48,7 @@ export default function Industrial() {
   ];
 
   return (
-    <div className="pt-16">
+    <div className="pt-24">
       <title>Industrial Electrical Services - Demand Electric LLC | Little Rock, AR</title>
       <meta name="description" content="Professional industrial electrical services in Little Rock, AR. Manufacturing facilities, motor control systems, high-voltage installations. Heavy-duty electrical solutions. Call (501) 693-6229." />
       
@@ -73,7 +73,7 @@ export default function Industrial() {
                 </Button>
                 <Button 
                   size="lg" 
-                  className="bg-white text-electric-blue hover:bg-gray-100 font-semibold"
+                  className="bg-white text-blue-600 hover:bg-gray-100 font-semibold"
                 >
                   Industrial Assessment
                 </Button>
@@ -83,7 +83,7 @@ export default function Industrial() {
               <img 
                 src="https://s3-media0.fl.yelpcdn.com/bphoto/1M9JZsYYbs0rE1Oq5Z2tdw/o.jpg" 
                 alt="Demand Electric LLC industrial electrical work" 
-                className="rounded-xl shadow-2xl w-full h-auto" 
+                className="rounded-xl shadow-2xl w-full h-80 object-cover" 
               />
             </div>
           </div>
@@ -163,7 +163,7 @@ export default function Industrial() {
               <img 
                 src="https://lh3.googleusercontent.com/p/AF1QipPRudpNc8TfRxtXS7-nNr8wocJZnzZcjxL1yU1_=s680-w680-h510-rw" 
                 alt="Demand Electric LLC industrial electrical installation" 
-                className="rounded-xl shadow-xl w-full h-auto" 
+                className="rounded-xl shadow-xl w-full h-80 object-cover" 
               />
             </div>
           </div>
@@ -236,7 +236,7 @@ export default function Industrial() {
             </Button>
             <Button 
               size="lg" 
-              className="bg-white text-electric-blue hover:bg-gray-100 font-semibold text-lg"
+              className="bg-white text-blue-600 hover:bg-gray-100 font-semibold text-lg"
             >
               Schedule Site Visit
             </Button>

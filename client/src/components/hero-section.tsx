@@ -6,7 +6,7 @@ import QuoteForm from "./quote-form";
 export default function HeroSection() {
   const [isFormOpen, setIsFormOpen] = useState(false);
   return (
-    <section className="pt-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+    <section className="pt-24 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 text-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
@@ -27,7 +27,7 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg" 
-                className="bg-electric-orange text-white hover:bg-orange-600 font-semibold text-lg"
+                className="bg-gradient-to-r from-electric-orange to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold text-lg shadow-xl transform hover:scale-105 transition-all duration-300"
                 asChild
               >
                 <a href="tel:5016936229" className="flex items-center">
@@ -37,18 +37,19 @@ export default function HeroSection() {
               </Button>
               <Button 
                 size="lg" 
-                className="bg-electric-blue text-white hover:bg-blue-700 font-semibold text-lg"
+                className="bg-white text-blue-600 hover:bg-gray-100 font-semibold text-lg"
                 onClick={() => setIsFormOpen(true)}
               >
                 Get Free Quote
               </Button>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-electric-orange to-electric-blue rounded-xl blur opacity-30 group-hover:opacity-50 transition duration-1000"></div>
             <img 
               src="https://lh3.googleusercontent.com/p/AF1QipPWJ9FJjqUGqEFl9uudrmG_LcaWxG1Kxg9ZuIvG=s680-w680-h510-rw" 
               alt="Demand Electric LLC professional electrical work" 
-              className="rounded-xl shadow-2xl w-full h-auto" 
+              className="relative rounded-xl shadow-2xl w-full h-auto transform hover:scale-105 transition-all duration-500" 
             />
           </div>
         </div>

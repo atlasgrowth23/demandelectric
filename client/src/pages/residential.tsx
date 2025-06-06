@@ -37,12 +37,12 @@ export default function Residential() {
   ];
 
   return (
-    <div className="pt-16">
+    <div className="pt-24">
       <title>Residential Electrical Services - Demand Electric LLC | Little Rock, AR</title>
       <meta name="description" content="Professional residential electrical services in Little Rock, AR. Panel upgrades, lighting installation, home rewiring, and emergency repairs. 25+ years experience. Call (501) 693-6229." />
       
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+      <section className="py-20 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 text-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -55,14 +55,14 @@ export default function Residential() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   size="lg" 
-                  className="bg-electric-yellow text-electric-blue hover:bg-yellow-500 font-semibold"
+                  className="bg-gradient-to-r from-electric-yellow to-yellow-400 text-electric-blue hover:from-yellow-400 hover:to-yellow-500 font-semibold shadow-xl transform hover:scale-105 transition-all duration-300"
                   asChild
                 >
                   <a href="tel:5016936229">Call for Service</a>
                 </Button>
                 <Button 
                   size="lg" 
-                  className="bg-white text-electric-blue hover:bg-gray-100 font-semibold"
+                  className="bg-white text-blue-600 hover:bg-gray-100 font-semibold"
                 >
                   Free Estimate
                 </Button>
@@ -72,7 +72,7 @@ export default function Residential() {
               <img 
                 src="https://s3-media0.fl.yelpcdn.com/bphoto/M4-2HjgrPpcJcuZU0g19fA/o.jpg" 
                 alt="Demand Electric LLC residential electrical installation" 
-                className="rounded-xl shadow-2xl w-full h-auto" 
+                className="rounded-xl shadow-2xl w-full h-80 object-cover" 
               />
             </div>
           </div>
@@ -93,9 +93,9 @@ export default function Residential() {
             {services.map((service) => {
               const Icon = service.icon;
               return (
-                <Card key={service.title} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+                <Card key={service.title} className="border-0 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
                   <CardContent className="p-6 text-center">
-                    <div className="bg-electric-orange w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div className="bg-gradient-to-br from-electric-orange to-orange-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:shadow-xl transform group-hover:scale-110 transition-all duration-300">
                       <Icon className="text-white h-8 w-8" />
                     </div>
                     <h3 className="font-semibold electric-gray text-xl mb-3">{service.title}</h3>
@@ -152,7 +152,7 @@ export default function Residential() {
               <img 
                 src="https://s3-media0.fl.yelpcdn.com/bphoto/QkZUKm1JIlKWV_vB9t_a3g/o.jpg" 
                 alt="Demand Electric LLC residential electrical work" 
-                className="rounded-xl shadow-xl w-full h-auto" 
+                className="rounded-xl shadow-xl w-full h-80 object-cover" 
               />
             </div>
           </div>
@@ -211,7 +211,7 @@ export default function Residential() {
             </Button>
             <Button 
               size="lg" 
-              className="bg-white text-electric-blue hover:bg-gray-100 font-semibold text-lg"
+              className="bg-white text-blue-600 hover:bg-gray-100 font-semibold text-lg"
             >
               Schedule Consultation
             </Button>

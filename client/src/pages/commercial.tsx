@@ -48,7 +48,7 @@ export default function Commercial() {
   ];
 
   return (
-    <div className="pt-16">
+    <div className="pt-24">
       <title>Commercial Electrical Services - Demand Electric LLC | Little Rock, AR</title>
       <meta name="description" content="Professional commercial electrical services in Little Rock, AR. Office buildings, retail spaces, restaurants, and more. Expert installation and maintenance. Call (501) 693-6229." />
       
@@ -73,7 +73,7 @@ export default function Commercial() {
                 </Button>
                 <Button 
                   size="lg" 
-                  className="bg-white text-electric-blue hover:bg-gray-100 font-semibold"
+                  className="bg-white text-blue-600 hover:bg-gray-100 font-semibold"
                 >
                   Free Consultation
                 </Button>
@@ -83,7 +83,7 @@ export default function Commercial() {
               <img 
                 src="https://s3-media0.fl.yelpcdn.com/bphoto/p_94qy5ki81dXZ8Ysp1XJg/o.jpg" 
                 alt="Demand Electric LLC commercial electrical installation" 
-                className="rounded-xl shadow-2xl w-full h-auto" 
+                className="rounded-xl shadow-2xl w-full h-80 object-cover" 
               />
             </div>
           </div>
@@ -127,7 +127,7 @@ export default function Commercial() {
               <img 
                 src="https://s3-media0.fl.yelpcdn.com/bphoto/kj2NABLROE0csdMGTdGaAA/o.jpg" 
                 alt="Demand Electric LLC commercial electrical work" 
-                className="rounded-xl shadow-xl w-full h-auto" 
+                className="rounded-xl shadow-xl w-full h-80 object-cover" 
               />
             </div>
             <div>
@@ -236,7 +236,7 @@ export default function Commercial() {
             </Button>
             <Button 
               size="lg" 
-              className="bg-white text-electric-blue hover:bg-gray-100 font-semibold text-lg"
+              className="bg-white text-blue-600 hover:bg-gray-100 font-semibold text-lg"
             >
               Schedule Assessment
             </Button>

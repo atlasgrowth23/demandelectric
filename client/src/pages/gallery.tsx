@@ -65,7 +65,7 @@ export default function Gallery() {
     : galleryImages.filter(img => img.category === activeCategory);
 
   return (
-    <div className="pt-16">
+    <div className="pt-24">
       <title>Project Gallery - Demand Electric LLC | Little Rock, AR</title>
       <meta name="description" content="View our completed electrical projects in Little Rock, AR. Residential, commercial, and industrial electrical work gallery. Professional electrical installations and repairs." />
       

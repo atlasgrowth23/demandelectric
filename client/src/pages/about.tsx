@@ -40,7 +40,7 @@ export default function About() {
   ];
 
   return (
-    <div className="pt-16">
+    <div className="pt-24">
       <title>About Demand Electric LLC - 25+ Years of Electrical Excellence</title>
       <meta name="description" content="Learn about Demand Electric LLC's 25+ years of electrical contracting experience in Little Rock, AR. Trusted local electricians with personalized service and flexible payment options." />
       
@@ -100,7 +100,7 @@ export default function About() {
               <img 
                 src="https://lh3.googleusercontent.com/p/AF1QipPWJ9FJjqUGqEFl9uudrmG_LcaWxG1Kxg9ZuIvG=s680-w680-h510-rw" 
                 alt="Demand Electric LLC professional electrical services" 
-                className="rounded-xl shadow-xl w-full h-auto" 
+                className="rounded-xl shadow-xl w-full h-80 object-cover" 
               />
             </div>
           </div>
@@ -153,7 +153,7 @@ export default function About() {
             </Button>
             <Button 
               size="lg" 
-              className="bg-white text-electric-blue hover:bg-gray-100 font-semibold text-lg"
+              className="bg-white text-blue-600 hover:bg-gray-100 font-semibold text-lg"
               onClick={openForm}
             >
               Get Free Quote
