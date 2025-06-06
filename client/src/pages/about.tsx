@@ -68,7 +68,7 @@ export default function About() {
               <div className="text-lg">Google Rating</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-electric-yellow mb-2">100%</div>
+              <div className="text-4xl font-bold text-electric-orange mb-2">100%</div>
               <div className="text-lg">Customer Satisfaction</div>
             </div>
           </div>
@@ -120,8 +120,8 @@ export default function About() {
               return (
                 <Card key={value.title} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                   <CardContent className="p-6">
-                    <div className="bg-electric-yellow w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                      <Icon className="electric-blue h-6 w-6" />
+                    <div className="bg-electric-orange w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                      <Icon className="text-white h-6 w-6" />
                     </div>
                     <h3 className="font-semibold electric-gray text-xl mb-3">{value.title}</h3>
                     <p className="text-gray-600">{value.description}</p>
@@ -143,7 +143,7 @@ export default function About() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-electric-yellow text-electric-blue hover:bg-yellow-500 font-semibold text-lg"
+              className="bg-electric-orange text-white hover:bg-orange-600 font-semibold text-lg"
               asChild
             >
               <a href="tel:5016936229">Call (501) 693-6229</a>
