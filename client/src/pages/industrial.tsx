@@ -73,8 +73,7 @@ export default function Industrial() {
                 </Button>
                 <Button 
                   size="lg" 
-                  variant="outline" 
-                  className="border-2 border-white text-white hover:bg-white hover:text-blue-800 font-semibold"
+                  className="bg-white text-electric-blue hover:bg-gray-100 font-semibold"
                 >
                   Industrial Assessment
                 </Button>
@@ -82,8 +81,8 @@ export default function Industrial() {
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
-                alt="Industrial electrical control panels and systems" 
+                src="https://s3-media0.fl.yelpcdn.com/bphoto/1M9JZsYYbs0rE1Oq5Z2tdw/o.jpg" 
+                alt="Demand Electric LLC industrial electrical work" 
                 className="rounded-xl shadow-2xl w-full h-auto" 
               />
             </div>
@@ -162,8 +161,8 @@ export default function Industrial() {
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1565043666747-69f6646db940?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
-                alt="Industrial electrical control room with monitoring systems" 
+                src="https://lh3.googleusercontent.com/p/AF1QipPRudpNc8TfRxtXS7-nNr8wocJZnzZcjxL1yU1_=s680-w680-h510-rw" 
+                alt="Demand Electric LLC industrial electrical installation" 
                 className="rounded-xl shadow-xl w-full h-auto" 
               />
             </div>
@@ -237,8 +236,7 @@ export default function Industrial() {
             </Button>
             <Button 
               size="lg" 
-              variant="outline" 
-              className="border-2 border-white text-white hover:bg-white hover:text-blue-800 font-semibold text-lg"
+              className="bg-white text-electric-blue hover:bg-gray-100 font-semibold text-lg"
             >
               Schedule Site Visit
             </Button>

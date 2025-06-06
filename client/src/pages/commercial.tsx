@@ -73,8 +73,7 @@ export default function Commercial() {
                 </Button>
                 <Button 
                   size="lg" 
-                  variant="outline" 
-                  className="border-2 border-white text-white hover:bg-white hover:text-blue-800 font-semibold"
+                  className="bg-white text-electric-blue hover:bg-gray-100 font-semibold"
                 >
                   Free Consultation
                 </Button>
@@ -82,8 +81,8 @@ export default function Commercial() {
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
-                alt="Modern commercial office building electrical installation" 
+                src="https://s3-media0.fl.yelpcdn.com/bphoto/p_94qy5ki81dXZ8Ysp1XJg/o.jpg" 
+                alt="Demand Electric LLC commercial electrical installation" 
                 className="rounded-xl shadow-2xl w-full h-auto" 
               />
             </div>
@@ -126,8 +125,8 @@ export default function Commercial() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
-                alt="Modern commercial office with professional electrical lighting" 
+                src="https://s3-media0.fl.yelpcdn.com/bphoto/kj2NABLROE0csdMGTdGaAA/o.jpg" 
+                alt="Demand Electric LLC commercial electrical work" 
                 className="rounded-xl shadow-xl w-full h-auto" 
               />
             </div>
@@ -237,8 +236,7 @@ export default function Commercial() {
             </Button>
             <Button 
               size="lg" 
-              variant="outline" 
-              className="border-2 border-white text-white hover:bg-white hover:text-blue-800 font-semibold text-lg"
+              className="bg-white text-electric-blue hover:bg-gray-100 font-semibold text-lg"
             >
               Schedule Assessment
             </Button>

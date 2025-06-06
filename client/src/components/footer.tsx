@@ -1,6 +1,9 @@
 import { Zap, Phone, MapPin, Clock, Star } from "lucide-react";
+import QuoteForm from "./quote-form";
+import { useQuoteForm } from "@/hooks/use-quote-form";
 
 export default function Footer() {
+  const { isFormOpen, openForm, closeForm } = useQuoteForm();
   return (
     <footer className="bg-electric-gray text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -9,7 +12,7 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center">
               <img 
-                src="/logo.png" 
+                src="https://s3-media0.fl.yelpcdn.com/bphoto/ZjE2kYNlTmPlZl_W27JVUg/l.jpg" 
                 alt="Demand Electric LLC Logo" 
                 className="h-10 w-auto mr-2"
               />
@@ -67,7 +70,7 @@ export default function Footer() {
               <div>Surrounding Areas</div>
             </div>
             <div className="mt-6">
-              <button className="bg-electric-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors">
+              <button onClick={openForm} className="bg-electric-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors">
                 Get Free Quote
               </button>
             </div>
@@ -78,6 +81,7 @@ export default function Footer() {
           <p>&copy; 2024 Demand Electric LLC. All rights reserved. | Professional electrical services in Arkansas</p>
         </div>
       </div>
+      <QuoteForm isOpen={isFormOpen} onClose={closeForm} />
     </footer>
   );
 }

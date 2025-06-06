@@ -62,8 +62,7 @@ export default function Residential() {
                 </Button>
                 <Button 
                   size="lg" 
-                  variant="outline" 
-                  className="border-2 border-white text-white hover:bg-white hover:text-blue-800 font-semibold"
+                  className="bg-white text-electric-blue hover:bg-gray-100 font-semibold"
                 >
                   Free Estimate
                 </Button>
@@ -71,8 +70,8 @@ export default function Residential() {
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
-                alt="Modern residential electrical panel and home interior" 
+                src="https://s3-media0.fl.yelpcdn.com/bphoto/M4-2HjgrPpcJcuZU0g19fA/o.jpg" 
+                alt="Demand Electric LLC residential electrical installation" 
                 className="rounded-xl shadow-2xl w-full h-auto" 
               />
             </div>
@@ -151,8 +150,8 @@ export default function Residential() {
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
-                alt="Professional electrician installing residential electrical panel" 
+                src="https://s3-media0.fl.yelpcdn.com/bphoto/QkZUKm1JIlKWV_vB9t_a3g/o.jpg" 
+                alt="Demand Electric LLC residential electrical work" 
                 className="rounded-xl shadow-xl w-full h-auto" 
               />
             </div>
@@ -212,8 +211,7 @@ export default function Residential() {
             </Button>
             <Button 
               size="lg" 
-              variant="outline" 
-              className="border-2 border-white text-white hover:bg-white hover:text-blue-800 font-semibold text-lg"
+              className="bg-white text-electric-blue hover:bg-gray-100 font-semibold text-lg"
             >
               Schedule Consultation
             </Button>

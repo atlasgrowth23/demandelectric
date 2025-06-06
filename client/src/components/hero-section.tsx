@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Star, Phone, Clock } from "lucide-react";
+import { Star, Phone } from "lucide-react";
+import QuoteForm from "./quote-form";
 
 export default function HeroSection() {
+  const [isFormOpen, setIsFormOpen] = useState(false);
   return (
     <section className="pt-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -35,6 +38,7 @@ export default function HeroSection() {
               <Button 
                 size="lg" 
                 className="bg-electric-blue text-white hover:bg-blue-700 font-semibold text-lg"
+                onClick={() => setIsFormOpen(true)}
               >
                 Get Free Quote
               </Button>
@@ -42,13 +46,14 @@ export default function HeroSection() {
           </div>
           <div className="relative">
             <img 
-              src="/logo.png" 
-              alt="Demand Electric LLC Logo" 
+              src="https://lh3.googleusercontent.com/p/AF1QipPWJ9FJjqUGqEFl9uudrmG_LcaWxG1Kxg9ZuIvG=s680-w680-h510-rw" 
+              alt="Demand Electric LLC professional electrical work" 
               className="rounded-xl shadow-2xl w-full h-auto" 
             />
           </div>
         </div>
       </div>
+      <QuoteForm isOpen={isFormOpen} onClose={() => setIsFormOpen(false)} />
     </section>
   );
 }

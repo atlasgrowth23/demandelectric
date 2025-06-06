@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Award, Handshake, CreditCard, Shield, Users, Clock, Star } from "lucide-react";
+import QuoteForm from "@/components/quote-form";
+import { useQuoteForm } from "@/hooks/use-quote-form";
 
 export default function About() {
+  const { isFormOpen, openForm, closeForm } = useQuoteForm();
   const values = [
     {
       icon: Award,
@@ -95,8 +98,8 @@ export default function About() {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
-                alt="Experienced electrician working with electrical equipment" 
+                src="https://lh3.googleusercontent.com/p/AF1QipPWJ9FJjqUGqEFl9uudrmG_LcaWxG1Kxg9ZuIvG=s680-w680-h510-rw" 
+                alt="Demand Electric LLC professional electrical services" 
                 className="rounded-xl shadow-xl w-full h-auto" 
               />
             </div>
@@ -151,12 +154,14 @@ export default function About() {
             <Button 
               size="lg" 
               className="bg-white text-electric-blue hover:bg-gray-100 font-semibold text-lg"
+              onClick={openForm}
             >
               Get Free Quote
             </Button>
           </div>
         </div>
       </section>
+      <QuoteForm isOpen={isFormOpen} onClose={closeForm} />
     </div>
   );
 }
