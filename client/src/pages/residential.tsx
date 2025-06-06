@@ -42,38 +42,33 @@ export default function Residential() {
       <meta name="description" content="Professional residential electrical services in Little Rock, AR. Panel upgrades, lighting installation, home rewiring, and emergency repairs. 25+ years experience. Call (501) 693-6229." />
       
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 text-white relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-                Residential Electrical Services
-              </h1>
-              <p className="text-xl text-blue-100 mb-8">
-                Complete home electrical solutions from simple repairs to whole house rewiring. We handle all your residential electrical needs with precision and care.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button 
-                  size="lg" 
-                  className="bg-gradient-to-r from-electric-yellow to-yellow-400 text-electric-blue hover:from-yellow-400 hover:to-yellow-500 font-semibold shadow-xl transform hover:scale-105 transition-all duration-300"
-                  asChild
-                >
-                  <a href="tel:5016936229">Call for Service</a>
-                </Button>
-                <Button 
-                  size="lg" 
-                  className="bg-white text-blue-600 hover:bg-gray-100 font-semibold"
-                >
-                  Free Estimate
-                </Button>
-              </div>
-            </div>
-            <div>
-              <img 
-                src="https://s3-media0.fl.yelpcdn.com/bphoto/M4-2HjgrPpcJcuZU0g19fA/o.jpg" 
-                alt="Demand Electric LLC residential electrical installation" 
-                className="rounded-xl shadow-2xl w-full h-80 object-cover" 
-              />
+      <section className="py-20 min-h-[70vh] relative overflow-hidden text-white bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('https://s3-media0.fl.yelpcdn.com/bphoto/M4-2HjgrPpcJcuZU0g19fA/o.jpg')"}}>
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/70"></div>
+        
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center min-h-[60vh]">
+          <div className="max-w-4xl">
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+              Residential Electrical Services
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-200 mb-8">
+              Complete home electrical solutions from simple repairs to whole house rewiring. We handle all your residential electrical needs with precision and care.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-electric-yellow to-yellow-400 text-electric-blue hover:from-yellow-400 hover:to-yellow-500 font-semibold shadow-xl transform hover:scale-105 transition-all duration-300 px-8 py-4"
+                asChild
+              >
+                <a href="tel:5016936229" className="flex items-center justify-center">Call for Service</a>
+              </Button>
+              <Button 
+                size="lg" 
+                className="bg-white text-blue-600 hover:bg-gray-100 font-semibold shadow-xl px-8 py-4"
+              >
+                Free Estimate
+              </Button>
             </div>
           </div>
         </div>

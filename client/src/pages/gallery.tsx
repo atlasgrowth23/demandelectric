@@ -70,12 +70,18 @@ export default function Gallery() {
       <meta name="description" content="View our completed electrical projects in Little Rock, AR. Residential, commercial, and industrial electrical work gallery. Professional electrical installations and repairs." />
       
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Work Gallery</h1>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-            See examples of our professional electrical installations and repairs across residential, commercial, and industrial projects throughout Little Rock and surrounding areas.
-          </p>
+      <section className="py-20 min-h-[60vh] relative overflow-hidden text-white bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('https://lh3.googleusercontent.com/p/AF1QipPWJ9FJjqUGqEFl9uudrmG_LcaWxG1Kxg9ZuIvG=s680-w680-h510-rw')"}}>
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/70"></div>
+        
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex items-center min-h-[50vh]">
+          <div className="w-full">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Our Work Gallery</h1>
+            <p className="text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto">
+              See examples of our professional electrical installations and repairs across residential, commercial, and industrial projects throughout Little Rock and surrounding areas.
+            </p>
+          </div>
         </div>
       </section>
 

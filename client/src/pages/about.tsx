@@ -45,34 +45,38 @@ export default function About() {
       <meta name="description" content="Learn about Demand Electric LLC's 25+ years of electrical contracting experience in Little Rock, AR. Trusted local electricians with personalized service and flexible payment options." />
       
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">About Demand Electric LLC</h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+      <section className="py-20 min-h-[70vh] relative overflow-hidden text-white bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('https://lh3.googleusercontent.com/p/AF1QipPWJ9FJjqUGqEFl9uudrmG_LcaWxG1Kxg9ZuIvG=s680-w680-h510-rw')"}}>
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/70"></div>
+        
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center min-h-[60vh]">
+          <div className="text-center w-full">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">About Demand Electric LLC</h1>
+            <p className="text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto mb-12">
               With over 25 years of experience in the Mountain Pine, AR area, we've built our reputation on trustworthy solutions and exceptional customer service.
             </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold text-electric-orange mb-2">25+</div>
-              <div className="text-lg">Years of Experience</div>
-            </div>
-            <div>
-              <div className="flex justify-center items-center mb-2">
-                <span className="text-4xl font-bold text-electric-orange mr-2">5.0</span>
-                <div className="flex text-electric-orange">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-6 w-6 fill-current" />
-                  ))}
-                </div>
+            
+            <div className="grid md:grid-cols-3 gap-8 text-center">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <div className="text-4xl md:text-5xl font-bold text-electric-orange mb-2">25+</div>
+                <div className="text-lg md:text-xl">Years of Experience</div>
               </div>
-              <div className="text-lg">Google Rating</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-electric-orange mb-2">100%</div>
-              <div className="text-lg">Customer Satisfaction</div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <div className="flex justify-center items-center mb-2">
+                  <span className="text-4xl md:text-5xl font-bold text-electric-orange mr-2">5.0</span>
+                  <div className="flex text-electric-orange">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-6 w-6 fill-current" />
+                    ))}
+                  </div>
+                </div>
+                <div className="text-lg md:text-xl">Google Rating</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <div className="text-4xl md:text-5xl font-bold text-electric-orange mb-2">100%</div>
+                <div className="text-lg md:text-xl">Customer Satisfaction</div>
+              </div>
             </div>
           </div>
         </div>
