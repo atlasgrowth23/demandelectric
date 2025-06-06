@@ -124,7 +124,7 @@ export default function Gallery() {
                         <h3 className="font-semibold electric-gray">{image.title}</h3>
                         <span className="text-sm text-gray-500">{image.category}</span>
                       </div>
-                      <span className="bg-electric-yellow text-electric-blue px-2 py-1 rounded text-xs font-semibold">
+                      <span className="bg-electric-orange text-white px-2 py-1 rounded text-xs font-semibold">
                         {image.category}
                       </span>
                     </div>
@@ -168,7 +168,7 @@ export default function Gallery() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-electric-yellow text-electric-blue hover:bg-yellow-500 font-semibold text-lg"
+              className="bg-electric-orange text-white hover:bg-orange-600 font-semibold text-lg"
               asChild
             >
               <a href="tel:5016936229">Call (501) 693-6229</a>

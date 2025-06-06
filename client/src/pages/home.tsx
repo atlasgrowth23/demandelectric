@@ -45,7 +45,7 @@ export default function Home() {
           </div>
           
           <div className="text-center mt-12">
-            <a href="/gallery" className="bg-electric-blue text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transition-colors inline-block">
+            <a href="/gallery" className="bg-electric-orange text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-orange-600 transition-colors inline-block">
               View Full Gallery
             </a>
           </div>

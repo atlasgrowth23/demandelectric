@@ -107,8 +107,8 @@ export default function Industrial() {
               return (
                 <Card key={service.title} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                   <CardContent className="p-6 text-center">
-                    <div className="bg-electric-yellow w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Icon className="electric-blue h-8 w-8" />
+                    <div className="bg-electric-orange w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Icon className="text-white h-8 w-8" />
                     </div>
                     <h3 className="font-semibold electric-gray text-xl mb-3">{service.title}</h3>
                     <p className="text-gray-600">{service.description}</p>
@@ -131,28 +131,28 @@ export default function Industrial() {
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-electric-yellow rounded-full mt-2"></div>
+                  <div className="w-2 h-2 bg-electric-orange rounded-full mt-2"></div>
                   <div>
                     <strong className="electric-gray">Motor Control Systems:</strong>
                     <span className="text-gray-600"> Advanced motor controls for precise equipment operation</span>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-electric-yellow rounded-full mt-2"></div>
+                  <div className="w-2 h-2 bg-electric-orange rounded-full mt-2"></div>
                   <div>
                     <strong className="electric-gray">High-Voltage Installations:</strong>
                     <span className="text-gray-600"> Safe installation and maintenance of high-voltage systems</span>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-electric-yellow rounded-full mt-2"></div>
+                  <div className="w-2 h-2 bg-electric-orange rounded-full mt-2"></div>
                   <div>
                     <strong className="electric-gray">Industrial Lighting:</strong>
                     <span className="text-gray-600"> High-bay and specialized lighting for industrial environments</span>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-electric-yellow rounded-full mt-2"></div>
+                  <div className="w-2 h-2 bg-electric-orange rounded-full mt-2"></div>
                   <div>
                     <strong className="electric-gray">Power Distribution:</strong>
                     <span className="text-gray-600"> Complex power distribution systems for large facilities</span>
@@ -230,7 +230,7 @@ export default function Industrial() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-electric-yellow text-electric-blue hover:bg-yellow-500 font-semibold text-lg"
+              className="bg-electric-orange text-white hover:bg-orange-600 font-semibold text-lg"
               asChild
             >
               <a href="tel:5016936229">Call (501) 693-6229</a>
