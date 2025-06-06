@@ -24,7 +24,7 @@
   --ring: 20 14.3% 4.1%;
   --radius: 0.5rem;
   --electric-blue: 207 90% 54%;
-  --electric-yellow: 45 96% 53%;
+  --electric-orange: 25 95% 53%;
   --electric-gray: 215 25% 27%;
 }
 
@@ -50,7 +50,7 @@
   --ring: 240 4.9% 83.9%;
   --radius: 0.5rem;
   --electric-blue: 207 90% 54%;
-  --electric-yellow: 45 96% 53%;
+  --electric-orange: 25 95% 53%;
   --electric-gray: 215 25% 27%;
 }
 
@@ -73,12 +73,12 @@
     background-color: hsl(var(--electric-blue));
   }
   
-  .electric-yellow {
-    color: hsl(var(--electric-yellow));
+  .electric-orange {
+    color: hsl(var(--electric-orange));
   }
   
-  .bg-electric-yellow {
-    background-color: hsl(var(--electric-yellow));
+  .bg-electric-orange {
+    background-color: hsl(var(--electric-orange));
   }
   
   .electric-gray {

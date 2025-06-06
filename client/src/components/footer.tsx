@@ -8,15 +8,18 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center">
-              <Zap className="text-electric-yellow h-8 w-8 mr-2" />
-              <span className="font-bold text-xl">Demand Electric LLC</span>
+              <img 
+                src="https://s3-media0.fl.yelpcdn.com/bphoto/ZjE2kYNlTmPlZl_W27JVUg/l.jpg" 
+                alt="Demand Electric LLC Logo" 
+                className="h-10 w-auto mr-2"
+              />
             </div>
             <p className="text-gray-300">
               Professional electrical services with over 25 years of experience serving Little Rock and nearby areas.
             </p>
             <div className="flex items-center space-x-1">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="h-4 w-4 fill-electric-yellow text-electric-yellow" />
+                <Star key={i} className="h-4 w-4 fill-electric-orange text-electric-orange" />
               ))}
               <span className="ml-2 text-sm bg-white/20 px-2 py-1 rounded">5.01 Google Rating</span>
             </div>
@@ -27,17 +30,17 @@ export default function Footer() {
             <h3 className="font-semibold text-lg">Contact Information</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-electric-yellow" />
-                <a href="tel:5016936229" className="hover:text-electric-yellow transition-colors">
+                <Phone className="h-5 w-5 text-electric-orange" />
+                <a href="tel:5016936229" className="hover:text-electric-orange transition-colors">
                   (501) 693-6229
                 </a>
               </div>
               <div className="flex items-center space-x-3">
-                <MapPin className="h-5 w-5 text-electric-yellow" />
+                <MapPin className="h-5 w-5 text-electric-orange" />
                 <span>Little Rock & Nearby Areas</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Clock className="h-5 w-5 text-electric-yellow" />
+                <Clock className="h-5 w-5 text-electric-orange" />
                 <span>Open • Closes 5 PM</span>
               </div>
             </div>

@@ -24,8 +24,11 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center">
-            <Zap className="text-electric-yellow h-8 w-8 mr-2" />
-            <span className="font-bold text-xl electric-blue">Demand Electric LLC</span>
+            <img 
+              src="https://s3-media0.fl.yelpcdn.com/bphoto/ZjE2kYNlTmPlZl_W27JVUg/l.jpg" 
+              alt="Demand Electric LLC Logo" 
+              className="h-12 w-auto mr-2"
+            />
           </Link>
 
           {/* Desktop Navigation */}
