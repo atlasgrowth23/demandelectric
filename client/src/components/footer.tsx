@@ -14,7 +14,7 @@ export default function Footer() {
               <img 
                 src="https://s3-media0.fl.yelpcdn.com/bphoto/ZjE2kYNlTmPlZl_W27JVUg/l.jpg" 
                 alt="Demand Electric LLC Logo" 
-                className="h-10 w-auto mr-2"
+                className="h-20 w-auto"
               />
             </div>
             <p className="text-gray-300">
@@ -53,11 +53,11 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">Our Services</h3>
             <div className="space-y-2">
-              <div>Residential Electrical</div>
-              <div>Commercial Solutions</div>
-              <div>Industrial Systems</div>
-              <div>Emergency Repairs</div>
-              <div>Panel Upgrades</div>
+              <a href="/residential" className="block hover:text-electric-orange transition-colors">Residential Electrical</a>
+              <a href="/commercial" className="block hover:text-electric-orange transition-colors">Commercial Solutions</a>
+              <a href="/industrial" className="block hover:text-electric-orange transition-colors">Industrial Systems</a>
+              <a href="tel:5016936229" className="block hover:text-electric-orange transition-colors">Emergency Repairs</a>
+              <a href="/residential" className="block hover:text-electric-orange transition-colors">Panel Upgrades</a>
             </div>
           </div>
 

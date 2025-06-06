@@ -47,15 +47,15 @@ export default function Residential() {
         <div className="absolute inset-0 bg-black/70"></div>
         
         {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center min-h-[60vh]">
-          <div className="max-w-4xl">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center min-h-[60vh]">
+          <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
               Residential Electrical Services
             </h1>
-            <p className="text-xl md:text-2xl text-gray-200 mb-8">
+            <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto">
               Complete home electrical solutions from simple repairs to whole house rewiring. We handle all your residential electrical needs with precision and care.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-electric-yellow to-yellow-400 text-electric-blue hover:from-yellow-400 hover:to-yellow-500 font-semibold shadow-xl transform hover:scale-105 transition-all duration-300 px-8 py-4"
@@ -90,7 +90,7 @@ export default function Residential() {
               return (
                 <Card key={service.title} className="border-0 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
                   <CardContent className="p-6 text-center">
-                    <div className="bg-gradient-to-br from-electric-orange to-orange-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:shadow-xl transform group-hover:scale-110 transition-all duration-300">
+                    <div className="bg-electric-orange w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                       <Icon className="text-white h-8 w-8" />
                     </div>
                     <h3 className="font-semibold electric-gray text-xl mb-3">{service.title}</h3>

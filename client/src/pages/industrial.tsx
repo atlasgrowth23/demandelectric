@@ -58,15 +58,15 @@ export default function Industrial() {
         <div className="absolute inset-0 bg-black/70"></div>
         
         {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center min-h-[60vh]">
-          <div className="max-w-4xl">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center min-h-[60vh]">
+          <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
               Industrial Electrical Services
             </h1>
-            <p className="text-xl md:text-2xl text-gray-200 mb-8">
+            <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto">
               Specialized electrical services for manufacturing facilities, warehouses, and industrial complexes requiring high-capacity, reliable electrical systems.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-electric-yellow to-yellow-400 text-electric-blue hover:from-yellow-400 hover:to-yellow-500 font-semibold shadow-xl transform hover:scale-105 transition-all duration-300 px-8 py-4"
