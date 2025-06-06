@@ -39,12 +39,12 @@ export default function ContactSection() {
             const Icon = item.icon;
             const content = (
               <div className="text-center">
-                <div className="bg-electric-yellow w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon className="electric-blue h-8 w-8" />
+                <div className="bg-electric-orange w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon className="text-white h-8 w-8" />
                 </div>
                 <h3 className="font-semibold text-xl mb-2">{item.title}</h3>
                 <p className="text-blue-100 mb-4">{item.description}</p>
-                <p className="text-electric-yellow font-semibold text-lg">
+                <p className="text-electric-orange font-semibold text-lg">
                   {item.value}
                 </p>
               </div>
@@ -65,7 +65,7 @@ export default function ContactSection() {
         <div className="text-center mt-12">
           <Button 
             size="lg"
-            className="bg-electric-yellow text-electric-blue hover:bg-yellow-500 font-bold text-lg"
+            className="bg-electric-orange text-white hover:bg-orange-600 font-bold text-lg"
           >
             Get Your Free Quote Today
           </Button>

@@ -8,7 +8,7 @@ export default function HeroSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <div className="flex items-center mb-4">
-              <div className="flex text-electric-yellow">
+              <div className="flex text-electric-orange">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 fill-current" />
                 ))}
@@ -24,7 +24,7 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg" 
-                className="bg-electric-yellow text-electric-blue hover:bg-yellow-500 font-semibold text-lg"
+                className="bg-electric-orange text-white hover:bg-orange-600 font-semibold text-lg"
                 asChild
               >
                 <a href="tel:5016936229" className="flex items-center">

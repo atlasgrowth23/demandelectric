@@ -34,8 +34,8 @@ export default function AboutPreview() {
                 const Icon = feature.icon;
                 return (
                   <div key={feature.title} className="flex items-start">
-                    <div className="bg-electric-yellow w-10 h-10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                      <Icon className="electric-blue h-5 w-5" />
+                    <div className="bg-electric-orange w-10 h-10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                      <Icon className="text-white h-5 w-5" />
                     </div>
                     <div>
                       <h3 className="font-semibold electric-gray mb-2">{feature.title}</h3>

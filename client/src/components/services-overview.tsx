@@ -55,7 +55,7 @@ export default function ServicesOverview() {
                   <h3 className="text-2xl font-bold electric-gray mb-4">{service.title}</h3>
                   <p className="text-gray-600 mb-6">{service.description}</p>
                   <Button 
-                    className="bg-electric-yellow text-electric-blue hover:bg-yellow-500 font-semibold"
+                    className="bg-electric-orange text-white hover:bg-orange-600 font-semibold"
                     asChild
                   >
                     <Link href={service.href}>Read More</Link>

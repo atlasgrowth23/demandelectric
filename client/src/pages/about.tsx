@@ -53,13 +53,13 @@ export default function About() {
           
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold text-electric-yellow mb-2">25+</div>
+              <div className="text-4xl font-bold text-electric-orange mb-2">25+</div>
               <div className="text-lg">Years of Experience</div>
             </div>
             <div>
               <div className="flex justify-center items-center mb-2">
-                <span className="text-4xl font-bold text-electric-yellow mr-2">5.01</span>
-                <div className="flex text-electric-yellow">
+                <span className="text-4xl font-bold text-electric-orange mr-2">5.01</span>
+                <div className="flex text-electric-orange">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="h-6 w-6 fill-current" />
                   ))}

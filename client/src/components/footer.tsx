@@ -67,7 +67,7 @@ export default function Footer() {
               <div>Surrounding Areas</div>
             </div>
             <div className="mt-6">
-              <button className="bg-electric-yellow text-electric-blue px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-colors">
+              <button className="bg-electric-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors">
                 Get Free Quote
               </button>
             </div>
