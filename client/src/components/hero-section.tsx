@@ -13,13 +13,13 @@ export default function HeroSection() {
                   <Star key={i} className="h-5 w-5 fill-current" />
                 ))}
               </div>
-              <span className="ml-2 text-sm bg-white/20 px-2 py-1 rounded">5.01 Google Rating</span>
+              <span className="ml-2 text-sm bg-white/20 px-2 py-1 rounded">5.0 Google Rating</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
               Professional Electrical Services You Can Trust
             </h1>
             <p className="text-xl mb-8 text-blue-100">
-              With over 25 years of experience serving Little Rock and nearby areas, we provide reliable electrical solutions with exceptional customer service.
+              Serving Little Rock and nearby areas, we provide reliable electrical solutions with exceptional customer service.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
@@ -34,27 +34,18 @@ export default function HeroSection() {
               </Button>
               <Button 
                 size="lg" 
-                variant="outline" 
-                className="border-2 border-white text-white hover:bg-white hover:text-blue-800 font-semibold text-lg"
+                className="bg-electric-blue text-white hover:bg-blue-700 font-semibold text-lg"
               >
                 Get Free Quote
               </Button>
             </div>
-            <div className="mt-6 flex items-center text-blue-100">
-              <Clock className="mr-2 h-5 w-5" />
-              <span>Open Today • Closes 5 PM</span>
-            </div>
           </div>
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-              alt="Professional electrician working on electrical panel" 
+              src="@assets/screenshot-1749234609829.png" 
+              alt="Demand Electric LLC Logo" 
               className="rounded-xl shadow-2xl w-full h-auto" 
             />
-            <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-xl">
-              <div className="electric-blue font-bold text-2xl">25+</div>
-              <div className="electric-gray text-sm">Years Experience</div>
-            </div>
           </div>
         </div>
       </div>
