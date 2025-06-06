@@ -42,7 +42,7 @@ export default function HeroSection() {
           </div>
           <div className="relative">
             <img 
-              src="@assets/screenshot-1749234609829.png" 
+              src="/logo.png" 
               alt="Demand Electric LLC Logo" 
               className="rounded-xl shadow-2xl w-full h-auto" 
             />

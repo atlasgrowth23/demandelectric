@@ -58,7 +58,7 @@ export default function About() {
             </div>
             <div>
               <div className="flex justify-center items-center mb-2">
-                <span className="text-4xl font-bold text-electric-orange mr-2">5.01</span>
+                <span className="text-4xl font-bold text-electric-orange mr-2">5.0</span>
                 <div className="flex text-electric-orange">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="h-6 w-6 fill-current" />
@@ -150,8 +150,7 @@ export default function About() {
             </Button>
             <Button 
               size="lg" 
-              variant="outline" 
-              className="border-2 border-white text-white hover:bg-white hover:text-blue-800 font-semibold text-lg"
+              className="bg-white text-electric-blue hover:bg-gray-100 font-semibold text-lg"
             >
               Get Free Quote
             </Button>

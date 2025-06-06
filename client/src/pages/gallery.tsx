@@ -150,7 +150,7 @@ export default function Gallery() {
                 <div className="text-gray-600">Customer Satisfaction</div>
               </div>
               <div>
-                <div className="text-3xl font-bold electric-blue mb-2">5.01</div>
+                <div className="text-3xl font-bold electric-blue mb-2">5.0</div>
                 <div className="text-gray-600">Google Rating</div>
               </div>
             </div>
@@ -175,8 +175,7 @@ export default function Gallery() {
             </Button>
             <Button 
               size="lg" 
-              variant="outline" 
-              className="border-2 border-white text-white hover:bg-white hover:text-blue-800 font-semibold text-lg"
+              className="bg-white text-electric-blue hover:bg-gray-100 font-semibold text-lg"
             >
               Get Free Quote
             </Button>

@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center">
               <img 
-                src="https://s3-media0.fl.yelpcdn.com/bphoto/ZjE2kYNlTmPlZl_W27JVUg/l.jpg" 
+                src="/logo.png" 
                 alt="Demand Electric LLC Logo" 
                 className="h-10 w-auto mr-2"
               />
@@ -21,7 +21,7 @@ export default function Footer() {
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="h-4 w-4 fill-electric-orange text-electric-orange" />
               ))}
-              <span className="ml-2 text-sm bg-white/20 px-2 py-1 rounded">5.01 Google Rating</span>
+              <span className="ml-2 text-sm bg-white/20 px-2 py-1 rounded">5.0 Google Rating</span>
             </div>
           </div>
 

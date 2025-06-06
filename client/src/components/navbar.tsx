@@ -25,7 +25,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center">
             <img 
-              src="@assets/screenshot-1749234609829.png" 
+              src="/logo.png" 
               alt="Demand Electric LLC Logo" 
               className="h-16 w-auto mr-2"
             />
