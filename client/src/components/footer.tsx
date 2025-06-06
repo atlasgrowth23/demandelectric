@@ -1,6 +1,7 @@
 import { Zap, Phone, MapPin, Clock, Star } from "lucide-react";
 import QuoteForm from "./quote-form";
 import { useQuoteForm } from "@/hooks/use-quote-form";
+import { Link } from "wouter";
 
 export default function Footer() {
   const { isFormOpen, openForm, closeForm } = useQuoteForm();

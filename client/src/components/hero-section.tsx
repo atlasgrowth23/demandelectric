@@ -30,7 +30,7 @@ export default function HeroSection() {
     },
     {
       id: 2,
-      background: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4))",
+      background: "https://lh3.googleusercontent.com/p/AF1QipNIr9GoCcLZ0XpSJDM9QLP9ATSHiR72Cx3vfRtl=s680-w680-h510-rw",
       title: "Our Professional Work",
       description: "See examples of our quality electrical installations and repairs",
       buttons: [
@@ -39,15 +39,11 @@ export default function HeroSection() {
           href: "/gallery",
           className: "bg-gradient-to-r from-electric-orange to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold text-lg shadow-xl transform hover:scale-105 transition-all duration-300 px-8 py-4"
         }
-      ],
-      images: [
-        "https://lh3.googleusercontent.com/p/AF1QipNIr9GoCcLZ0XpSJDM9QLP9ATSHiR72Cx3vfRtl=s680-w680-h510-rw",
-        "https://lh3.googleusercontent.com/p/AF1QipOb7mBL-cLUn42l-cG0Aqg4Yw4bpQJJojgAvlGR=s680-w680-h510-rw"
       ]
     },
     {
       id: 3,
-      background: "https://lh3.googleusercontent.com/p/AF1QipOb7mBL-cLUn42l-cG0Aqg4Yw4bpQJJojgAvlGR=s680-w680-h510-rw",
+      background: "https://lh3.googleusercontent.com/p/AF1QipNcWRQEQrH3h36UFCmyw7bKa0462ZB5yDyzZvqO=s680-w680-h510-rw",
       title: "Quality Electrical Work",
       description: "Professional installations and repairs you can trust",
       buttons: [
@@ -99,7 +95,11 @@ export default function HeroSection() {
         <>
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{backgroundImage: `url('${currentSlideData.background}')`}}
+            style={{
+              backgroundImage: `url('${currentSlideData.background}')`,
+              imageRendering: 'crisp-edges',
+              filter: 'contrast(1.1) saturate(1.1)'
+            }}
           ></div>
           <div className="absolute inset-0 bg-black/40"></div>
         </>
